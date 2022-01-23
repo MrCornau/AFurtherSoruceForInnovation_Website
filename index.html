@@ -9,30 +9,57 @@
         <!-- Add additional CSS & JS files as necessary here -->
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
-
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
+        <div class="column">
+        <div class="corpus">
+            <canvas id="particle-div" width="600" height="500"></canvas>
+        <div>
+            <h1>DataCorpus</h1>
+            <p>this is our data corpus</p>
         </div>
+        </div>
+    </div>
+        <div class="corpus">
+
+        <div class="box0" >
+            blaaa
+        </div>
+        <div class="box" >
+            blaaa
+
+        </div>
+        </div>
+        
+        <!-- Add your site or application content here -->
+        <div class="example">
+            <div class="box0" id="box0">
+            </div>
+            <div class="box" id="box1">
+            </div>
+            <div class="box2" id="box2">
+            </div>
+            <div class="box3" id="box3">
+            </div>
+            <!-- <svg height="210" width="500">
+              <line x1="0" y1="0" x2="0" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg> -->
+            <svg id="svg">
+              <polyline  id="line"/>
+              <path stroke="grey" id="bezier" stroke-width="2" fill="none" />
+              <path stroke="grey" id="bezier2" stroke-width="2" fill="none" />
+            </svg>
+            
+            <!-- <div id="container">
+                <div id="tsparticles"></div>
+                
+            </div> -->
+            
+
+
+          </div>
+         
+    <!-- <script src="https://data.jsdelivr.com/v1/package/npm/tsparticles/badge)](https://www.jsdelivr.com/package/npm/tsparticles)"></script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.39.0/tsparticles.min.js"></script>
         <!-- ================================ -->
         <!-- Add more JavaScript files here!! -->
         <!-- ================================ -->

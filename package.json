@@ -32,6 +32,8 @@
     "live-server": "^1.2.1"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
+    "onscreen": "^1.4.0",
     "particles.js": "^2.0.0",
     "tsparticles": "^1.39.0"
   }

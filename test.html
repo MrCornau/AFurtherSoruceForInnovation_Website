@@ -9,54 +9,13 @@
         <link rel="stylesheet" type="text/css" href="src/css/index.css">
         <link rel="stylesheet" type="text/css" href="src/css/particlePost.css">
         <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
-        <link rel="stylesheet" type="text/css" href="src/css/nav.css">
-        <link rel="stylesheet" type="text/css" href="src/css/button.css">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
         <!-- Add additional CSS & JS files as necessary here -->
     </head>
     <body>
-        <nav id="nav-desktop" class="background__Dark">
-            <h3>Lead<br>Finder</h3>
-            <div class="nav-container-desktop">
-                <ul>
-                    <li class="li-selected"><span><a class="fontColor_Main"  >The Process</a></span></li>
-                    <li><span><a class="fontColor_Main" href="about.html">About The Project</a></span></li>
-                    <button class="actionbutton button-font fontColor_Dark" >Get Started</button>
-                  </ul>
-                  
-            </div>
-        </nav>
-        <nav id="nav-mobile" class="background__Dark">
-                <h3>Lead<br>Finder</h3>
-                <button id="nav-toggleHamburger">
-                    <svg id="hamburger" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path id="hamburger-top" d="M0 1H20" stroke="#DBE5E6" stroke-width="2"/>
-                        <path id="hamburger-center" d="M0 9H20" stroke="#DBE5E6" stroke-width="2"/>
-                        <path id="hamburger-bottom" d="M0 17H20" stroke="#DBE5E6" stroke-width="2"/>
-                        </svg>    
-                </button>  
- 
-        </nav>
-
-        <div id="nav-mobile-overlay"class="nav-container-mobile background__Dark  border-bottom">
-            <ul>
-                <div>
-                    
-                    <li class="li-selected"><span><a class="fontColor_Main">The Process</a></span></li>
-                    <li><span><a class="fontColor_Main" href="about.html">About The Project</a></span></li>
-                </div>
-                <button class="actionbutton button-font fontColor_Dark" style="margin-top: 40%;">Get Started</button>
-              </ul>
-              
-        </div>
-        <div id="header"></div>
-
-        <div style="height: 1800px;"></div>
-
-
         <div class="column">
-        <div class="corpus" id="Part-haystack" >
+        <div class="corpus" id="Part-haystack" style="display: none;">
             <div class="particle-container">
                 <div class="particle-container-blur"></div>
                 <canvas id="particle-div" >
@@ -152,10 +111,51 @@
             </div>
             <div class="particlePost-Polygon"></div>
         </div>
+  
         </div>
-        <div style="height: 800px;"></div>
+       
+    </div>
+        <div class="corpus">
+        <div id="testdiv"></div>
 
-    </div> 
+        <div class="box0" >
+            blaaa
+        </div>
+        <div class="box" >
+            blaaa
+            
+            
+        </div>
+        </div>
+        
+        <!-- Add your site or application content here -->
+        <div class="example">
+            <div class="box0" id="box0">
+            </div>
+            <div class="box" id="box1">
+            </div>
+            <div class="box2" id="box2">
+            </div>
+            <div class="box3" id="box3">
+            </div>
+            <!-- <svg height="210" width="500">
+              <line x1="0" y1="0" x2="0" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            </svg> -->
+            <svg id="svg">
+              <polyline  id="line"/>
+              <path stroke="grey" id="bezier" stroke-width="2" fill="none" />
+              <path stroke="grey" id="bezier2" stroke-width="2" fill="none" />
+            </svg>
+            
+            <!-- <div id="container">
+                <div id="tsparticles"></div>
+                
+            </div> -->
+            
+            <div id ="animediv" class="anime-test" style="background-color: blue;">test</div>
+            <button id="anime-test" style="background-color: blue;">button</button>
+
+          </div>
          
     <!-- <script src="https://data.jsdelivr.com/v1/package/npm/tsparticles/badge)](https://www.jsdelivr.com/package/npm/tsparticles)"></script> -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -163,14 +163,9 @@
         <!-- ================================ -->
         <!-- Add more JavaScript files here!! -->
         <!-- ================================ -->
-        <script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
-        <script src="src/js/anime.min.js"></script>
+        <!-- <script src="src/js/anime.min.js"></script>
         <script type="text/javascript" src="src/js/other.js"></script>
         <script type="text/javascript" src="src/js/index.js"></script>
-        <script type="text/javascript" src="src/js/anime.js"></script>
-        <script type="text/javascript" src="src/js/nav.js"></script>
-        <script type="text/javascript" src="src/js/hamburger.js"></script>
-
-        
+        <script type="text/javascript" src="src/js/anime.js"></script> -->
     </body>
 </html>

@@ -1,0 +1,152 @@
+/* _____ Colors _____ */
+
+.background__Dark {
+  background: rgba(35, 36, 37, 1);
+}
+.contur__Fine {
+  background: rgba(51, 55, 58, 1);
+}
+
+.fontColor_Main {
+  color: rgba(219, 229, 230, 1);
+}
+
+.fontColor_Second {
+  color: rgba(176, 205, 207, 1);
+}
+
+.fontColor_Signal {
+  color: rgba(237, 246, 125, 1);
+}
+
+.fontColor_Dark {
+  color: rgba(35, 36, 37, 1);
+}
+
+.fontColor_Third {
+  color: rgba(64, 78, 81, 1);
+}
+
+/* _____ Fonts _____ */
+
+html {
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
+  only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
+  html {
+    font-size: 150%;
+  }
+
+  #hamburger {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+h1 {
+  font-family: IBM Plex Serif;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h2 {
+  font-family: IBM Plex Serif;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h3 {
+  font-family: IBM Plex Serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h4 {
+  font-family: IBM Plex Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+p {
+  font-family: IBM Plex Sans;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+a {
+  font-family: IBM Plex Sans;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 400;
+
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(237, 246, 125, 1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-font {
+  font-family: IBM Plex Mono;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8em;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Font-Marked {
+  font-family: IBM Plex Serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* _____ Icons _____ */
+
+.Icon__Small {
+  width: 1em;
+  height: 1em;
+}
+
+/*____Helpers____*/
+
+.rotate90 {
+  -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+  -moz-transform: rotate(-90deg); /* Firefox */
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -o-transform: rotate(-90deg); /* Opera */
+  transform: rotate(-90deg);
+}
+
+.border-bottom {
+  outline: 1px solid rgba(51, 55, 58, 1);
+  outline-offset: 5px;
+}

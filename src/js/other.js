@@ -97,7 +97,7 @@ function particles() {
   if (mobile.matches) {
     number = 10;
   } else {
-    number = 200;
+    number = 40;
   }
 
   let speed = 0.5;

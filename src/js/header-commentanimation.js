@@ -6,9 +6,9 @@ const row = grid[1];
 let dpr = window.devicePixelRatio || 1;
 let x1 = screen.width / 2;
 let x2 = screen.width;
-let y1 = 60;
-let y2 = screen.height - 60;
-let randx = getRandomArbitrary(x1, x2 - 300);
+let y1 = 100;
+let y2 = screen.height - 100;
+let randx = getRandomArbitrary(x1, x2 - 400);
 let randy = getRandomArbitrary(y1, y2);
 let mobile = window.matchMedia("(max-width: 700px)");
 
@@ -86,7 +86,7 @@ setInterval(function () {
     randx = 30;
     randy = y2 - 100;
   } else {
-    randx = getRandomArbitrary(x1, x2 - 300);
+    randx = getRandomArbitrary(x1, x2 - 400);
     randy = getRandomArbitrary(y1, y2 - 300);
   }
   animationfunction();
@@ -109,8 +109,8 @@ function getRandomArbitrary(min, max) {
 function checkWindowsize() {
   x1 = screen.width / 2;
   x2 = screen.width;
-  y2 = screen.height;
-  -y1;
+  y1 = 100;
+  y2 = screen.height - y1;
   mobile = window.matchMedia("(max-width: 700px)");
   console.log("checkwindowsize");
 }

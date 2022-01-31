@@ -4,7 +4,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 10px 0px 10px;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -136,4 +136,29 @@ span::before {
   background: rgba(219, 229, 230, 1);
   width: 2px;
   transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-mobile-overlay-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-background {
+  width: 100%;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(31, 31, 31, 1),
+      rgba(31, 31, 31, 0.8)
+    ),
+    url("/src/assets/background-header.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 1920px 1200px;
 }

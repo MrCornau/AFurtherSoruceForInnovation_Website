@@ -21,7 +21,7 @@ input[type="reset"] {
 body {
   margin: 0;
   padding: 0;
-  background-color: #232425;
+  background-color: var(--background-dark);
   color: #fff;
   font-size: 1em;
   text-align: center;
@@ -100,7 +100,7 @@ body {
 
 .column {
   height: 100%;
-  max-width: 1920px;
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -190,4 +190,103 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+}
+
+.header-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.header-brekpoints {
+  width: 30%;
+  padding: 0px;
+  margin: 0px !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
+  only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
+  .header-brekpoints {
+    width: 90%;
+    padding: 0px;
+    margin: 0px !important;
+  }
+  #header {
+    background-position: 40% 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px),
+  only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
+  .header-brekpoints {
+    width: 60%;
+    padding: 0px;
+    margin: 0px !important;
+  }
+  #header {
+    background-position: 40% 50%;
+  }
+}
+
+.stagger-visualizer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 7px;
+  margin-bottom: -8px;
+  align-items: flex-start;
+}
+
+.stagger-visualizer .stagger-triangle {
+  /*position: absolute;*/
+  width: 15px;
+  height: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    #edf67d 50%,
+    #edf67d 100%
+  );
+}
+
+.margin {
+  margin-top: -20px;
+}
+
+.header-commentanimation {
+  position: absolute;
+  top: 00px;
+  left: 00px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  opacity: 0;
+  flex-direction: row-reverse;
+}
+
+.header-commentcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  width: 300px;
+  /* UI/Background */
+  /* UI/Signal */
+  opacity: 1;
+  border: 1px solid #edf67d;
+  background-color: var(--background-dark);
+  box-sizing: border-box;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.davinci-morph {
+  transform-origin: center center;
+  transform-box: fill-box;
 }

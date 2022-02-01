@@ -114,10 +114,10 @@ h4 {
 }
 
 h5 {
-  font-family: var(--font-family-serif);
+  font-family: var(--font-family-sans);
   font-size: var(--font-size-caption);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
 
   letter-spacing: 0em;
   text-align: left;

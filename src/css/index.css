@@ -98,12 +98,6 @@ body {
   background-color: blue;
 }
 
-.column {
-  height: 100%;
-  max-width: 1500px;
-  margin: auto;
-}
-
 .particle-container-blur {
   z-index: 1;
   position: absolute;
@@ -135,11 +129,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .column {
-    height: 100%;
-    margin: auto;
-    width: 90vw;
-  }
+
   .particle-container {
     /* border-style: solid; */
     /* position: relative; */
@@ -300,14 +290,14 @@ body {
 }
 
 .description-container {
-  margin-top: 100px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
+  padding: 10px;
   border: 1px solid #dbe5e6;
   box-sizing: border-box;
-
+  color: var(--fontcolor-second);
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -334,9 +324,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-  /* #davinci-animation-container {
-    width: 70%;
-  } */
 
   #davinci-animation-container p {
     font-size: 10px;
@@ -353,7 +340,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px),
+@media only screen and (min-width: 600px) and (max-width: 1200px),
   only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
   .davinci-container {
     flex-direction: column;
@@ -361,7 +348,25 @@ body {
   }
 }
 
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .description-container {
+    margin-top: 100px;
+  }
+  .davinci-description {
+    margin-left: 60px;
+  }
+}
+
 #davinci-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
+}
+
+.responsivesvg {
   position: absolute;
   top: 0;
   left: 0;
@@ -380,4 +385,42 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+}
+
+.quote-big {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-big-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.quote-big-container_content {
+  margin-top: 0px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.quote-big-container_path {
+  width: 2px;
+  position: absolute;
+  height: 100%;
+  background: var(--fontcolor-main);
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .quote-big-container {
+    width: 50%;
+  }
 }

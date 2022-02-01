@@ -86,9 +86,9 @@ h2 {
   font-size: var(--font-size-h2);
   font-style: normal;
   font-weight: 700;
-
   letter-spacing: 0em;
   text-align: left;
+  color: var(--fontcolor-second);
 }
 
 h3 {
@@ -99,6 +99,7 @@ h3 {
 
   letter-spacing: 0em;
   text-align: left;
+  margin-block-start: 0px;
 }
 
 h4 {
@@ -125,10 +126,12 @@ p {
   font-family: var(--font-family-sans);
   font-size: var(--font-size-p);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 
   letter-spacing: 0em;
   text-align: left;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 a {
@@ -160,6 +163,14 @@ a {
 
   cursor: pointer;
   text-decoration: none;
+}
+
+.quote-font {
+  font-family: var(--font-family-serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--font-size-h2);
+  text-align: left;
 }
 
 .Font-Marked {

@@ -1,17 +1,3 @@
-// button = document.getElementById("anime-test");
-// animetest = document.getElementById("animediv");
-
-// button.addEventListener("click", () => {
-//   console.log("button");
-//   anime({
-//     targets: animetest,
-//     translateX: 10,
-//     // rotate: "1turn",
-//     backgroundColor: "#FFF",
-//     duration: 800,
-//   });
-// });
-
 let davinci = document.getElementById("davinci-animation-container");
 os.on("enter", ".davinci-container", (davinci) => {
   davincifont1.play();
@@ -19,10 +5,6 @@ os.on("enter", ".davinci-container", (davinci) => {
   davincifont3.play();
   davincifont4.play();
   davincifont5.play();
-  setTimeout(() => {
-    onscreen = true;
-    console.log("onScreen!");
-  }, 1000);
 });
 
 os.on("leave", ".davinci-container", (canvas) => {
@@ -174,3 +156,16 @@ const davincitwinkle = anime
 //   easing: "easeInOutQuad",
 //   loop: true,
 // });
+window.onload = function () {
+  anime({
+    targets: document.getElementsByClassName("requirements-path"),
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutSine",
+    duration: 1500,
+    delay: function (el, i) {
+      return i * 250;
+    },
+    direction: "alternate",
+    loop: true,
+  });
+};

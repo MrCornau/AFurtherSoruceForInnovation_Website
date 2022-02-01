@@ -97,7 +97,7 @@ function particles() {
   if (mobile.matches) {
     number = 10;
   } else {
-    number = 40;
+    number = 10;
   }
 
   let speed = 0.5;
@@ -258,7 +258,7 @@ function particles() {
 
       // ctx.beginPath();
       // ctx.arc(x, y, 90, 0, Math.PI * 2, false);
-      // ctx.strokeStyle = "blue";
+      // ctx.strokeStyle = "grey";
       // ctx.stroke();
 
       let distanceOrigin = Math.sqrt(dxorigin * dxorigin + dyorigin * dyorigin);
@@ -376,10 +376,10 @@ function particles() {
         WindwoCenterX + 200,
       ]);
       let centerY = random([
-        WindwoCenterY - 100,
+        WindwoCenterY - 50,
         WindwoCenterY,
         WindwoCenterY,
-        WindwoCenterY + 100,
+        WindwoCenterY + 50,
       ]);
 
       let r = 80 * Math.sqrt(Math.random());

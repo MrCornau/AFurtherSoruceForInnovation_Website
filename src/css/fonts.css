@@ -6,12 +6,12 @@ html {
 }
 
 :root {
-  --background-dark: rgba(31, 31, 31, 1);
-  --contour-fine: rgba(51, 55, 58, 1);
-  --fontcolor-main: rgba(219, 229, 230, 1);
+  --background-dark: #1f1f1f;
+  --contour-fine: rgb(51, 55, 58);
+  --fontcolor-main: #dbe5e6;
   --fontcolor-second: rgba(176, 205, 207, 1);
-  --fontcolor-signal: rgba(237, 246, 125, 1);
-  --fontcolor-dark: rgba(35, 36, 37, 1);
+  --fontcolor-signal: #edf67d;
+  --fontcolor-dark: #232425;
   --fontcolor-third: rgba(64, 78, 81, 1);
 
   --font-family-serif: IBM Plex Serif;

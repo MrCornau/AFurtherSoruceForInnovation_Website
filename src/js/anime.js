@@ -1,3 +1,6 @@
+const os = new OnScreen();
+let onscreen = false;
+
 let davinci = document.getElementById("davinci-animation-container");
 os.on("enter", ".davinci-container", (davinci) => {
   davincifont1.play();
@@ -157,7 +160,10 @@ os.on("enter", ".requirements-content", () => {
 });
 
 os.on("leave", ".requirements-content", () => {
-  document.getElementsByClassName("requirements-path").style.opacity = 0;
+  let paths = document.getElementsByClassName("requirements-path");
+  for (let i = 0, len = paths.length; i < len; i++) {
+    paths[i].style.opacity = 0;
+  }
 });
 
 let requirementsPathAnimation = anime({

@@ -8,7 +8,7 @@
   height: 20vw;
 }
 
-.requirements {
+.flexcontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,12 +23,20 @@
   margin-top: 70px;
 }
 
+.particle-svg {
+  margin-top: 20px;
+  position: relative;
+}
+
 /* Larger than phablet */
 @media (min-width: 550px) {
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .particle-svg {
+    width: 60%;
+  }
 }
 
 /* Larger than desktop */
@@ -43,7 +51,7 @@
   .column {
     width: 900px;
   }
-  .requirements {
+  .flexcontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

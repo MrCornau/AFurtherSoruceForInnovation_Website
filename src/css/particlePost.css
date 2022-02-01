@@ -4,7 +4,21 @@
   flex-direction: row;
   align-items: flex-end;
   padding: 0px;
-  visibility: hidden;
+
+  opacity: 0;
+
+  transition: opacity 1s;
+  animation-fill-mode: forwards;
+  z-index: 10000;
+}
+
+.particle-anime-comment {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  left: 0;
   opacity: 0;
   transition: opacity 1s;
   animation-fill-mode: forwards;
@@ -43,12 +57,28 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
-  width: 400px;
+  width: 300px;
   /* UI/Background */
 
   /* UI/Signal */
 
   border: 1px solid #edf67d;
+  box-sizing: border-box;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.particle-anime-comment-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  width: 300px;
+  /* UI/Background */
+
+  /* UI/Signal */
   box-sizing: border-box;
   flex: none;
   order: 1;
@@ -80,7 +110,6 @@
 }
 
 #particle-div {
-  height: 80vh;
   /* border-style: solid; */
   width: 100%;
   z-index: 1000;

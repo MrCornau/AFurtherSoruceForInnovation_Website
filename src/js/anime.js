@@ -7,11 +7,6 @@ os.on("enter", ".davinci-container", (davinci) => {
   davincifont5.play();
 });
 
-os.on("leave", ".davinci-container", (canvas) => {
-  onscreen = false;
-  console.log("ofScreen!");
-});
-
 let animationease = "easeInOutSine";
 let durationtime = 2000;
 let loop = false;
@@ -156,16 +151,25 @@ const davincitwinkle = anime
 //   easing: "easeInOutQuad",
 //   loop: true,
 // });
-window.onload = function () {
-  anime({
-    targets: document.getElementsByClassName("requirements-path"),
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: "easeInOutSine",
-    duration: 1500,
-    delay: function (el, i) {
-      return i * 250;
-    },
-    direction: "alternate",
-    loop: true,
-  });
-};
+
+os.on("enter", ".requirements-content", () => {
+  requirementsPathAnimation.play();
+});
+
+os.on("leave", ".requirements-content", () => {
+  document.getElementsByClassName("requirements-path").style.opacity = 0;
+});
+
+let requirementsPathAnimation = anime({
+  targets: document.getElementsByClassName("requirements-path"),
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: "easeInOutSine",
+  duration: 1500,
+  delay: function (el, i) {
+    return i * 250;
+  },
+  direction: "alternate",
+  loop: false,
+  autoplay: false,
+  opacity: 1,
+});

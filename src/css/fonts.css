@@ -89,6 +89,7 @@ h2 {
   letter-spacing: 0em;
   text-align: left;
   color: var(--fontcolor-second);
+  margin-block-start: 0em;
 }
 
 h3 {

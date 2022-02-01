@@ -281,14 +281,6 @@ body {
   transform-box: fill-box;
 }
 
-.davinci-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-}
-
 .description-container {
   margin-top: 20px;
   display: flex;
@@ -423,4 +415,12 @@ body {
   .quote-big-container {
     width: 50%;
   }
+  /* .responsivesvg {
+    width: 50%;
+  } */
+}
+
+.requirements-path {
+  opacity: 0;
+  stroke: var(--fontcolor-signal);
 }

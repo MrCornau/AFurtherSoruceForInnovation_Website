@@ -4,7 +4,15 @@ nav {
   overflow: hidden;
   position: fixed;
   top: 0;
-  z-index: 999990;
+  z-index: 999999;
+}
+
+#nav-desktop {
+  top: 0px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .nav-wrapper {
@@ -24,7 +32,7 @@ nav {
   height: 0%;
   width: 100%;
   position: fixed; /* Stay in place */
-  z-index: 999990; /* Sit on top */
+  z-index: 999998; /* Sit on top */
   left: 0;
   top: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -32,6 +40,10 @@ nav {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .nav-container-mobile ul {

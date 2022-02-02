@@ -4,7 +4,7 @@ nav {
   overflow: hidden;
   position: fixed;
   top: 0;
-  z-index: 99999999;
+  z-index: 999990;
 }
 
 .nav-wrapper {
@@ -24,7 +24,7 @@ nav {
   height: 0%;
   width: 100%;
   position: fixed; /* Stay in place */
-  z-index: 10000000; /* Sit on top */
+  z-index: 999990; /* Sit on top */
   left: 0;
   top: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -104,9 +104,9 @@ nav {
 }
 
 .nav-container-desktop span::after,
-span::before,
+.nav-container-desktop span::before,
 .nav-container-mobile span::after,
-span::before {
+.nav-container-mobile span::before {
   z-index: -1;
   content: "";
   position: absolute;

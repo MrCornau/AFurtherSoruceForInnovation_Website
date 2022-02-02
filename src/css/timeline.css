@@ -1,0 +1,238 @@
+.timeline-tag {
+  display: inline-block;
+  padding: 4px 16px;
+  /* UI/Background */
+  background: #232425;
+  /* UI/Third_Text */
+  border: 1px solid #404e51;
+  margin-block: 10px;
+}
+
+.description-left {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.timeline-tag h5 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#timeline-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+}
+#timeline-header p {
+  margin-block: 10px;
+}
+
+#timeline-header-persons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  margin-top: 20px;
+}
+
+/* --------------- */
+
+#timeline-nav-cotainer {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 9999999;
+  width: 100%;
+  background-color: var(--background-dark);
+}
+
+#timeline-nav {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.horizontalscroll {
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100vw;
+}
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: var(--fontcolor-third);
+}
+::-webkit-scrollbar-thumb:horizontal {
+  padding: 5px;
+  background: var(--fontcolor-signal);
+  border-radius: 10px;
+}
+
+.timeline-ul {
+  width: 100%;
+}
+
+.timeline-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.timeline-nav-item {
+  min-width: 230px;
+  margin-right: 20px;
+  width: 19%;
+}
+
+.timeline-nav-item_bottom span {
+  height: 100%;
+  z-index: 10000;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  display: flex;
+}
+
+.timeline-nav-item_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timeline-nav-item_bottom span::before,
+.timeline-nav-item_bottom span::after,
+.timeline-nav-notselected h3::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.timeline-nav-selected span::before {
+  background: rgba(237, 246, 125, 1);
+  width: 3px;
+  transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.timeline-nav-notselected span:hover::before {
+  background: rgba(219, 229, 230, 1);
+  width: 3px;
+  transition: width 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.timeline-nav-notselected span:hover::after {
+  background: rgba(51, 55, 58, 0.4);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.timeline-nav-selected span::after {
+  background: rgba(237, 246, 125, 0.2);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.timeline-nav-notselected h3::before {
+  border: 1px solid #33373a;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.timeline-nav-notselected .timeline-nav-arrow {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+  transform: translate(0, 0);
+  opacity: 0;
+  transform: translate(-40px, 0);
+}
+
+.timeline-nav-arrow {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.timeline-nav-item_bottom h3 {
+  padding: 5px 10px 5px 10px;
+  margin-block-end: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.timeline-nav-selected {
+  color: var(--fontcolor-signal);
+}
+
+.timeline-nav-notselected {
+  color: var(--fontcolor-second);
+}
+
+.timeline-nav-item_top {
+  display: flex;
+}
+
+.timeline-nav-item_bottom {
+  height: 60px;
+}
+
+@media (min-width: 1000px) {
+  #timeline-header-persons {
+    width: 70%;
+  }
+
+  #timeline-header-persons-flex .description-container {
+    margin-right: 20px;
+  }
+
+  #timeline-header-persons-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .description-left {
+    width: 50%;
+  }
+  .timeline-nav-item {
+    margin-right: 0;
+  }
+
+  .horizontalscroll {
+    height: 100%;
+    overflow-y: unset;
+    white-space: unset;
+    width: 100%;
+  }
+}
+
+/*---------------------- */
+
+.sticky {
+  position: fixed !important;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}

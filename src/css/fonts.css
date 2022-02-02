@@ -166,6 +166,16 @@ a {
   text-decoration: none;
 }
 
+.caption {
+  font-family: var(--font-family-extra);
+  font-style: italic;
+  font-weight: 400;
+  font-size: var(--font-size-caption);
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .quote-font {
   font-family: var(--font-family-serif);
   font-style: italic;

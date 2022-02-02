@@ -260,9 +260,6 @@ body {
   border: 1px solid #dbe5e6;
   box-sizing: border-box;
   color: var(--fontcolor-second);
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 .davinci-font {
@@ -312,7 +309,7 @@ body {
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-  .description-container {
+  .distance-top {
     margin-top: 100px;
   }
   .davinci-description {

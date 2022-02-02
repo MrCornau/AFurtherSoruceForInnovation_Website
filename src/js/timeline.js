@@ -64,12 +64,16 @@ var sticky = header.offsetTop;
 let offsetHeight = mobilenav.offsetHeight + nav.offsetHeight;
 let timelineheight = header.offsetHeight;
 
+let mobile = window.matchMedia("(max-width: 700px)").matches;
+
 let recalcSticky = function () {
   header = document.getElementById("timeline-nav-cotainer");
   // Get the offset position of the navbar
   sticky = header.offsetTop;
   offsetHeight = mobilenav.offsetHeight + nav.offsetHeight;
   timelineheight = header.offsetHeight;
+  mobile = window.matchMedia("(max-width: 700px)").matches;
+  changeDAGraph();
 };
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
@@ -95,13 +99,6 @@ function addsticky(upscroll) {
 }
 
 function switchWorksheets(flip) {
-  //   for (let i = 1; i < 10; i++) {
-  //     document.getElementById(
-  //       `worksheet${i}`
-  //     ).src = `src/assets/Worksheets/${Variant}_Variant_0${i}.jpg`;
-  //     document.getElementById(`worksheet${i}`).classList.remove("rotation");
-  //     document.getElementById(`worksheet${i}`).classList.add("rotation");
-  //   }
   if (flip) {
     document.querySelectorAll(".flip-card-inner").forEach((item) => {
       item.classList.add("flip");
@@ -113,18 +110,11 @@ function switchWorksheets(flip) {
   }
 }
 
-function removeRotation() {
-  for (let i = 1; i < 10; i++) {
-    document.getElementById(`worksheet${i}`).classList.remove("rotation");
-  }
-}
-
 window.onresize = recalcSticky;
 
 let toggleBool = false;
 
 togglePrint.addEventListener("click", function () {
-  //   removeRotation();
   if (!toggleBool) {
     togglePrint.classList.add("toggled");
     toggleBool = true;
@@ -136,12 +126,16 @@ togglePrint.addEventListener("click", function () {
   }
 });
 
-// src="src/assets/Worksheets/Digital_Variant_01.jpg"
-// src="src/assets/Worksheets/Digital_Variant_02.jpg"
-// src="src/assets/Worksheets/Digital_Variant_03.jpg"
-// src="src/assets/Worksheets/Digital_Variant_04.jpg"
-// src="src/assets/Worksheets/Digital_Variant_05.jpg"><
-// src="src/assets/Worksheets/Digital_Variant_06.jpg"
-// src="src/assets/Worksheets/Digital_Variant_07.jpg"
-// src="src/assets/Worksheets/Digital_Variant_08.jpg"
-// src="src/assets/Worksheets/Digital_Variant_09.jpg"
+let changeDAGraph = () => {
+  if (mobile) {
+    document
+      .getElementById("Data-Anaytic-Graphic")
+      .setAttribute("data", "src/assets/Icons/DataAnalysis_Mobile.svg");
+  } else {
+    document
+      .getElementById("Data-Anaytic-Graphic")
+
+      .setAttribute("data", "src/assets/Icons/DataAnalysis_Desktop.svg");
+  }
+};
+changeDAGraph();

@@ -457,3 +457,13 @@
     height: unset;
   }
 }
+
+#line2 {
+  stroke: var(--fontcolor-third);
+  stroke-width: 2;
+}
+
+#line3 {
+  stroke: var(--fontcolor-third);
+  stroke-width: 2;
+}

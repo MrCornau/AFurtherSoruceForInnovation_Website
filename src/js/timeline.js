@@ -81,6 +81,9 @@ let recalcSticky = function () {
 function addsticky(upscroll) {
   if (window.pageYOffset + offsetHeight / 2 > sticky) {
     header.classList.add("sticky");
+    document.getElementById(
+      "placeholder"
+    ).style.cssText += `height:${timelineheight}px`;
     if (upscroll) {
       header.style.cssText += `top : ${offsetHeight}px`;
       mobilenav.style.cssText += `top : 0px`;
@@ -95,6 +98,7 @@ function addsticky(upscroll) {
     header.style.cssText += `top : 0px`;
     mobilenav.style.cssText += `top : 0px`;
     nav.style.cssText += `top : 0px`;
+    document.getElementById("placeholder").style.cssText += `height: 0px`;
   }
 }
 

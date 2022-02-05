@@ -469,3 +469,92 @@
   stroke: var(--fontcolor-third);
   stroke-width: 2;
 }
+
+/* 
+---------svg------- */
+
+#Data-Anaytic-Graphic {
+  max-width: 1000px;
+  display: flex;
+}
+
+/* 
+--------------webapp---------------- */
+
+#hovercard {
+  background-size: cover;
+  max-width: 80vw;
+  margin: auto;
+  height: auto;
+  position: relative;
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+  overflow: visible;
+  transform: perspective(80vw) rotateX(2deg) rotateY(0deg);
+}
+
+/* Slight parallax effect on hover */
+
+#hovercard::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+#webapp-comment {
+  position: absolute;
+  width: calc(80vw * 0.528);
+  left: calc(80vw * 0.297);
+  top: calc(80vw * 0.05);
+}
+
+#webapp-comment-container {
+  width: 100%;
+}
+
+.comment-buttons {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: calc(80vw * 0.02);
+}
+
+.comment-buttonssmall {
+  width: calc(80vw * 0.03);
+}
+
+.comment-button-big-svg {
+  width: calc(80vw * 0.02);
+}
+
+.comment-buttonbig {
+  height: calc(80vw * 0.041);
+  width: calc(80vw * 0.041);
+  background: #232425;
+  border: 1px solid #b0cdcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.comment-buttonbig:hover {
+  background: rgba(237, 246, 125, 0.2);
+  border: 1px solid var(--fontcolor-signal);
+}

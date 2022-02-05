@@ -143,3 +143,33 @@ let changeDAGraph = () => {
   }
 };
 changeDAGraph();
+
+const card = document.getElementById("hovercard");
+const THRESHOLD = 5;
+
+function handleHover(e) {
+  console.log(e);
+  const { clientX, clientY, currentTarget } = e;
+  const { clientWidth, clientHeight, offsetLeft, offsetTop } = currentTarget;
+
+  const horizontal = (clientX - offsetLeft) / clientWidth;
+  const verticalfirst = (clientY - offsetTop) / clientHeight;
+  const vertical = verticalfirst - Math.round(verticalfirst);
+  console.log(horizontal, vertical);
+
+  const rotateX = (THRESHOLD - horizontal * THRESHOLD).toFixed(2);
+  const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+  3;
+
+  card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+  // TODO
+}
+
+function resetStyles(e) {
+  console.log("wieder weg");
+  card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(2deg) rotateY(0deg)`;
+  // TODO
+}
+
+card.addEventListener("mousemove", handleHover);
+card.addEventListener("mouseleave", resetStyles);

@@ -37,3 +37,34 @@ window.addEventListener("resize", () => {
 //   this.load();
 //   this.play();
 // };
+
+// headervideo
+
+// document.getElementById('headervideo').video
+
+// document
+//   .getElementById("headervideo")
+//   .addEventListener("ended", myHandler, false);
+// function myHandler(e) {
+//   // What you want to do after the event
+//   document.getElementById("headervideo").currentTime = 0;
+//   document.getElementById("headervideo").play();
+// }
+
+var myVideo = document.getElementById("headervideo");
+
+if (typeof myVideo.loop == "boolean") {
+  // loop supported
+  myVideo.loop = true;
+} else {
+  // loop property not supported
+  myVideo.on(
+    "ended",
+    function () {
+      this.currentTime = 0;
+      this.play();
+    },
+    false
+  );
+}
+myVideo.play();

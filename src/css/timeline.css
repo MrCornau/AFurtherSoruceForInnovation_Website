@@ -62,20 +62,22 @@
   text-align: center;
 }
 
-.horizontalscroll {
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100vw;
-}
-::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
-  background: var(--fontcolor-third);
-}
-::-webkit-scrollbar-thumb:horizontal {
-  padding: 5px;
-  background: var(--fontcolor-signal);
-  border-radius: 10px;
+@media (max-width: 750px) {
+  .horizontalscroll {
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  ::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background: var(--fontcolor-third);
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    padding: 5px;
+    background: var(--fontcolor-signal);
+    border-radius: 10px;
+  }
 }
 
 .timeline-ul {

@@ -1,3 +1,10 @@
+/* Larger than tablet */
+@media (max-width: 750px) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
 .column {
   height: 100%;
   margin: auto;

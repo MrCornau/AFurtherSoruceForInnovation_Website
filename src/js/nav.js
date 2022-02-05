@@ -30,3 +30,10 @@ reportWindowSize();
 window.addEventListener("resize", () => {
   reportWindowSize();
 });
+
+// document.getElementsByTagName("video")[0].msHorizontalMirror = true;
+
+// document.getElementsByTagName("video")[0].onended = function () {
+//   this.load();
+//   this.play();
+// };

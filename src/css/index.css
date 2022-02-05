@@ -1,5 +1,26 @@
 /* Here are example using scss */
 
+.mirror {
+  transform: scaleX(-1);
+}
+
+.backgroundvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("/src/assets/background-header.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -143,13 +164,13 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url("/src/assets/background-header.jpg");
+  /* background-image: url("/src/assets/background-header.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
 }
 
 .header-description {

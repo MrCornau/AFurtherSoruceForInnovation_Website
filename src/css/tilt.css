@@ -5,12 +5,23 @@
 }
 
 .tilt-box-wrap {
-  width: 80vw;
-  height: calc(80vw * 0.594482040604);
+  width: var(--widthWebapp);
+  height: calc(var(--widthWebapp) * 0.594482040604);
   position: relative;
   transition: all 0.6s ease-out;
   perspective: 1000px;
 }
+
+@media (min-width: 1000px) {
+  .tilt-box-wrap {
+    width: var(--widthWebapp);
+  }
+
+  .tilt-box-wrap {
+    height: calc(var(--widthWebapp) * 0.594482040604);
+  }
+}
+
 .tilt-box-wrap:hover {
   transition: all 0.3s linear;
   transform: scale(1.01);

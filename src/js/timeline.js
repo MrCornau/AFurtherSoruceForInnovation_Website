@@ -10,9 +10,16 @@ let arrow3 = document.getElementById("timeline-nav-arrow-3");
 let arrow4 = document.getElementById("timeline-nav-arrow-4");
 let arrow5 = document.getElementById("timeline-nav-arrow-5");
 
+let stepsquare1 = document.getElementById("timeline-square1");
+let stepsquare2 = document.getElementById("timeline-square2");
+let stepsquare3 = document.getElementById("timeline-square3");
+let stepsquare4 = document.getElementById("timeline-square5");
+let stepsquare5 = document.getElementById("timeline-square6");
+
 let togglePrint = document.getElementById("togglePrint");
 
 let Steps = [step1, step2, step3, step4, step5];
+let Squares = [stepsquare1, stepsquare2, stepsquare3, stepsquare4, stepsquare5];
 
 let SelectedPath = arrow1;
 
@@ -23,6 +30,13 @@ let selectStep = (t) => {
       if (Steps[i].classList.contains("timeline-nav-notselected")) {
         Steps[i].classList.remove("timeline-nav-notselected");
         Steps[i].classList.add("timeline-nav-selected");
+        let scrollposition =
+          Squares[i].getBoundingClientRect().top + window.pageYOffset - 300;
+
+        window.scrollTo({
+          top: scrollposition,
+          behavior: "smooth",
+        });
       }
     } else {
       if (Steps[i].classList.contains("timeline-nav-selected")) {
@@ -135,11 +149,17 @@ let changeDAGraph = () => {
     document
       .getElementById("Data-Anaytic-Graphic")
       .setAttribute("data", "src/assets/Icons/DataAnalysis_Mobile.svg");
+    document
+      .getElementById("Stagegate")
+      .setAttribute("data", "src/assets/Stagegate-Mobile.svg");
   } else {
     document
       .getElementById("Data-Anaytic-Graphic")
 
       .setAttribute("data", "src/assets/Icons/DataAnalysis_Desktop.svg");
+    document
+      .getElementById("Stagegate")
+      .setAttribute("data", "src/assets/StageGate.svg");
   }
 };
 changeDAGraph();

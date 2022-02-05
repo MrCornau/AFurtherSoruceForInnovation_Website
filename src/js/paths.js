@@ -12,7 +12,8 @@ let draw = () => {
 
   let timelineSquare5 = $("#timeline-square5");
   let timelineSquare6 = $("#timeline-square6");
-  let timelineSquare6 = $("#Stagegate");
+  let stagegate = document.getElementById("Stagegate");
+  let stagegateQ = $("#Stagegate");
 
   let XtimelineSquare1 = timelineSquare1.offset().left + 14.142;
   let YtimelineSquare1 = timelineSquare1.offset().top + 32;
@@ -37,6 +38,10 @@ let draw = () => {
   let YtimelineSquare5_1 = timelineSquare5.offset().top + 32;
 
   let YtimelineSquare6 = timelineSquare6.offset().top;
+  let SagegateRect = stagegate.getBoundingClientRect();
+
+  let StagegateY = stagegateQ.offset().top + SagegateRect.height / 2;
+  let StagegateX = stagegateQ.offset().left;
 
   var d = `${"M" + XtimelineSquare3 + "," + YtimelineSquare3_1} 
   ${"L" + XtimelineSquare3 + "," + (YtimelineSquare4 - 100)} 
@@ -91,6 +96,25 @@ let draw = () => {
   ${"L" + XtimelineSquare5 + "," + YtimelineSquare5} 
   `;
 
+  var d3 = `${"M" + XtimelineSquare3 + "," + YtimelineSquare6} 
+  ${"L" + XtimelineSquare3 + "," + (StagegateY - 20)} 
+  ${
+    "C" +
+    XtimelineSquare3 +
+    "," +
+    StagegateY +
+    "," +
+    XtimelineSquare3 +
+    "," +
+    StagegateY +
+    "," +
+    (XtimelineSquare3 + 20) +
+    "," +
+    StagegateY
+  } 
+  ${"L" + StagegateX + "," + StagegateY} 
+  `;
+
   document.getElementById("svg").setAttribute("height", $(document).height());
   $(document.createElementNS("http://www.w3.org/2000/svg", "line"))
     .attr({
@@ -138,6 +162,26 @@ let draw = () => {
       y2: YtimelineSquare5,
     })
     .appendTo("#svg");
+
+  $(document.createElementNS("http://www.w3.org/2000/svg", "line"))
+    .attr({
+      id: "line7",
+      stroke: "#404E51",
+      x1: XtimelineSquare5,
+      y1: YtimelineSquare5_1,
+      x2: XtimelineSquare5,
+      y2: YtimelineSquare6,
+    })
+    .appendTo("#svg");
+
+  $(document.createElementNS("http://www.w3.org/2000/svg", "path"))
+    .attr({
+      id: "line8",
+
+      d: d3,
+      stroke: "#404E51",
+    })
+    .appendTo("#svg");
 };
 
 let redraw = () => {
@@ -148,6 +192,9 @@ let redraw = () => {
   let timelineSquare4 = $("#timeline-square4");
 
   let timelineSquare5 = $("#timeline-square5");
+  let timelineSquare6 = $("#timeline-square6");
+  let stagegate = document.getElementById("Stagegate");
+  let stagegateQ = $("#Stagegate");
 
   let XtimelineSquare1 = timelineSquare1.offset().left + 14.142;
   let YtimelineSquare1 = timelineSquare1.offset().top + 32;
@@ -170,6 +217,12 @@ let redraw = () => {
   let XtimelineSquare5 = timelineSquare5.offset().left + 14.142;
   let YtimelineSquare5 = timelineSquare5.offset().top + -7;
   let YtimelineSquare5_1 = timelineSquare5.offset().top + 32;
+
+  let YtimelineSquare6 = timelineSquare6.offset().top;
+  let SagegateRect = stagegate.getBoundingClientRect();
+
+  let StagegateY = stagegateQ.offset().top + SagegateRect.height / 2;
+  let StagegateX = stagegateQ.offset().left;
 
   var d = `${"M" + XtimelineSquare3 + "," + YtimelineSquare3_1} 
   ${"L" + XtimelineSquare3 + "," + (YtimelineSquare4 - 100)} 
@@ -264,6 +317,36 @@ let redraw = () => {
     y1: YtimelineSquare3_1,
     x2: XtimelineSquare5,
     y2: YtimelineSquare5,
+  });
+
+  $("#line7").attr({
+    x1: XtimelineSquare5,
+    y1: YtimelineSquare5_1,
+    x2: XtimelineSquare5,
+    y2: YtimelineSquare6,
+  });
+
+  var d3 = `${"M" + XtimelineSquare3 + "," + YtimelineSquare6} 
+  ${"L" + XtimelineSquare3 + "," + (StagegateY - 20)} 
+  ${
+    "C" +
+    XtimelineSquare5 +
+    "," +
+    StagegateY +
+    "," +
+    XtimelineSquare3 +
+    "," +
+    StagegateY +
+    "," +
+    (XtimelineSquare3 + 20) +
+    "," +
+    StagegateY
+  } 
+  ${"L" + StagegateX + "," + StagegateY} 
+  `;
+
+  $("#line8").attr({
+    d: d3,
   });
 };
 

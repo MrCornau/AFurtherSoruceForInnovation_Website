@@ -25,6 +25,7 @@ html {
   --font-size-p: 1.6rem;
   --font-size-button: 1.6rem;
   --font-size-caption: 1.2rem;
+  --widthWebapp: 95vw;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 600px),
@@ -37,6 +38,12 @@ html {
     --font-size-p: 1.6rem;
     --font-size-button: 1.6rem;
     --font-size-caption: 1.6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --widthWebapp: 80vw;
   }
 }
 

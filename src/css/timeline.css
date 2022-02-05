@@ -558,3 +558,40 @@
   background: rgba(237, 246, 125, 0.2);
   border: 1px solid var(--fontcolor-signal);
 }
+
+.clustering-image {
+  position: relative;
+  height: 33vw;
+}
+
+.svg-clustering {
+  width: 50vw;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.clustering-text {
+  width: 70%;
+}
+
+.timeline_indend_spacing {
+  width: 200px;
+}
+
+#figma-plugin-image {
+  width: 65vw;
+}
+
+@media (min-width: 1000px) {
+  .timeline_indend_spacing {
+    width: 200px;
+  }
+  #figma-plugin-image {
+    width: 80%;
+  }
+}
+
+#timeline-square6 {
+  opacity: 0;
+}

@@ -14,9 +14,9 @@ html {
   --fontcolor-dark: #232425;
   --fontcolor-third: rgba(64, 78, 81, 1);
 
-  --font-family-serif: IBM Plex Serif;
-  --font-family-sans: IBM Plex Sans;
-  --font-family-extra: IBM Plex Mono;
+  --font-family-serif: ff-meta-serif-web-pro, serif;
+  --font-family-sans: ibm-plex-sans, sans-serif;
+  --font-family-extra: ibm-plex-mono, sans-serif;
 
   --font-size-h1: 7rem;
   --font-size-h2: 3rem;
@@ -127,7 +127,7 @@ p {
   font-family: var(--font-family-sans);
   font-size: var(--font-size-p);
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
 
   letter-spacing: 0em;
   text-align: left;

@@ -1,0 +1,149 @@
+.imprint {
+  margin-top: 200px;
+  padding-block: 40px;
+  width: 100%;
+  background-color: var(--fontcolor-signal);
+  padding-bottom: 10vh;
+  bottom: 0;
+  left: 0;
+}
+
+.imprint-right {
+  width: 50%;
+}
+
+.imprint-student {
+  margin-top: 40px;
+}
+
+.imprint-right {
+  margin-top: 40px;
+}
+
+@media (min-width: 1000px) {
+  .imprint-right {
+    margin-top: 0px;
+  }
+  .imprint-right {
+    width: 10%;
+  }
+
+  .imprint-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .studentcontainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .imprint-student {
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+}
+
+.imprintcontact-container {
+  color: var(--fontcolor-dark);
+}
+
+.particle-triangle-imprint {
+  /*position: absolute;*/
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    var(--background-dark) 50%,
+    var(--background-dark) 100%
+  );
+}
+
+.imprintcontact-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.imprint-contact {
+  border: 2px solid #232425;
+  padding: 10px 20px;
+}
+
+.imprint-contact h2,
+.imprint-student-content h4,
+.imprint-student-content h5 {
+  color: var(--fontcolor-dark);
+  margin: 0;
+}
+
+.imprint-student-content h4 {
+  margin-bottom: 10px;
+}
+
+.imprint-student {
+  display: flex;
+  flex-direction: row;
+}
+
+.student-image {
+  width: 80px;
+}
+
+#marius {
+  background-image: url("/src/assets/Marius.jpeg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#josh {
+  background-image: url("/src/assets/Josh.jpeg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.imprint-student-content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imprint-icons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.imprint-icons a {
+  margin-right: 20px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.imprint-icons a object {
+  pointer-events: none;
+}
+
+.imprint-link {
+  margin-top: 40px;
+}
+
+.imprint-link h5,
+.imprint-link p {
+  color: var(--fontcolor-third);
+  margin: 0;
+  margin-top: 10px;
+}

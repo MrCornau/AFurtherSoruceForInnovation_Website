@@ -92,7 +92,7 @@ h2 {
   font-family: var(--font-family-serif);
   font-size: var(--font-size-h2);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0em;
   text-align: left;
   color: var(--fontcolor-second);
@@ -234,4 +234,10 @@ a {
   -ms-transform: rotate(-180deg); /* IE 9 */
   -o-transform: rotate(-180deg); /* Opera */
   transform: rotate(-180deg);
+}
+
+button[disabled] {
+  background-color: var(--fontcolor-second);
+  cursor: not-allowed;
+  color: var(--fontcolor-third);
 }

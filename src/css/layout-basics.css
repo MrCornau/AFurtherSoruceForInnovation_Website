@@ -3,6 +3,12 @@
   .hideOnMobile {
     display: none;
   }
+  #davinci-svg {
+    left: -50px;
+  }
+  .davinci-font {
+    left: -30px;
+  }
 }
 
 .column {
@@ -33,11 +39,16 @@
 
 #davinci-animation-container {
   margin-top: 70px;
+  margin-bottom: 40px;
 }
 
 .particle-svg {
   margin-top: 20px;
   position: relative;
+}
+
+.requirements-content {
+  margin-bottom: 40px;
 }
 
 /* Larger than phablet */
@@ -53,6 +64,10 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .margin-left {
+    margin-left: 40px;
+  }
+
   .davinci-container {
     display: flex;
     flex-direction: row;
@@ -75,6 +90,7 @@
   }
   .requirements-content {
     width: 40%;
+    margin-bottom: unset;
   }
   .requirements-svg {
     width: 50%;
@@ -108,4 +124,8 @@
   .column {
     width: 1800px;
   }
+}
+
+#timeline-header-persons-flex .description-container h3 {
+  margin: 0;
 }

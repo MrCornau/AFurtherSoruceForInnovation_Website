@@ -8,6 +8,17 @@
   margin-block: 10px;
 }
 
+.timeline-tag-task {
+  display: inline-block;
+  padding: 4px 16px;
+  /* UI/Background */
+  background: #232425;
+  /* UI/Third_Text */
+  border: 1px solid #404e51;
+  margin-block: 5px;
+  margin-right: 10px;
+}
+
 .description-left {
   display: flex;
 
@@ -16,7 +27,8 @@
   align-items: flex-start;
 }
 
-.timeline-tag h5 {
+.timeline-tag h5,
+.timeline-tag-task h5 {
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -196,9 +208,14 @@
 
 .timeline-nav-item_bottom {
   height: 60px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 1000px) {
+  .timeline-nav-item_bottom {
+    margin-bottom: 5px;
+  }
+
   #timeline-header-persons {
     width: 70%;
   }
@@ -335,8 +352,15 @@
   }
 
   .timelinecontent-right {
+    width: 100%;
     align-items: flex-end;
   }
+}
+
+.timlinecontent-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .worksheetimages {
@@ -458,6 +482,11 @@
     margin-top: 100px;
     height: unset;
   }
+
+  .timlinecontent-tags {
+    width: 300px;
+    justify-content: flex-end;
+  }
 }
 
 #line2 {
@@ -465,7 +494,12 @@
   stroke-width: 2;
 }
 
-#line3 {
+#line3,
+#line4,
+#line5,
+#line6,
+#line7,
+#line8 {
   stroke: var(--fontcolor-third);
   stroke-width: 2;
 }
@@ -673,4 +707,9 @@
     right: 0;
     position: absolute;
   }
+}
+
+.timelinecontent-left-personcount,
+.timelinecontent-left h2 {
+  margin-bottom: 10px;
 }

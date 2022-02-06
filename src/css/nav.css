@@ -173,7 +173,7 @@ nav {
       rgba(31, 31, 31, 1),
       rgba(31, 31, 31, 0.8)
     ),
-    url("/src/assets/background-header.jpg");
+    url("../assets/background-header.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

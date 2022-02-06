@@ -11,6 +11,24 @@ const Lead3 = 20;
 const Lead4 = 90;
 let position = 0;
 
+const onscreenOS = new OnScreen();
+let Haystackonscreen = false;
+
+let canvas = document.getElementById("Part-haystack");
+onscreenOS.on("enter", "canvas", (canvas) => {
+  setTimeout(() => {
+    Haystackonscreen = true;
+    console.log("onScreen!");
+    BackgroundAnimation.play();
+  }, 1000);
+});
+
+onscreenOS.on("leave", "canvas", (canvas) => {
+  Haystackonscreen = false;
+  console.log("ofScreen!");
+  BackgroundAnimation.pause();
+});
+
 let Comments = [
   {
     autor: "Daniel10 20.10.2021",
@@ -227,5 +245,3 @@ const BackgroundAnimation2 = anime
     scale: 0,
     duration: 600,
   });
-
-BackgroundAnimation.play();

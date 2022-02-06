@@ -104,7 +104,7 @@
 }
 
 #josh {
-  background-image: url(/src/assets/Josh.jpeg);
+  background-image: url("../../src/assets/Josh.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

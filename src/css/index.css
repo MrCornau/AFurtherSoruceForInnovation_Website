@@ -444,7 +444,7 @@ body {
 .el {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+
   background-color: #dbe5e6;
 }
 
@@ -482,4 +482,20 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .particle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 450px;
+  }
+  .el {
+    width: 15px;
+    height: 15px;
+    background-color: #dbe5e6;
+  }
 }

@@ -16,7 +16,7 @@ let draw = () => {
   let stagegateQ = $("#Stagegate");
 
   let XtimelineSquare1 = timelineSquare1.offset().left + 14.142;
-  let YtimelineSquare1 = timelineSquare1.offset().top + 32;
+  let YtimelineSquare1 = timelineSquare1.offset().top + 27;
 
   let XtimelineSquare2 = timelineSquare2.offset().left + 14.142;
   let YtimelineSquare2 = timelineSquare2.offset().top - 7;
@@ -200,22 +200,22 @@ let redraw = () => {
   let YtimelineSquare1 = timelineSquare1.offset().top + 32;
 
   let XtimelineSquare2 = timelineSquare2.offset().left + 14.142;
-  let YtimelineSquare2 = timelineSquare2.offset().top - 7;
+  let YtimelineSquare2 = timelineSquare2.offset().top - 3;
 
   let XtimelineSquare2_1 = timelineSquare2.offset().left + 14.142;
   let YtimelineSquare2_1 = timelineSquare2.offset().top + 32;
 
   let XtimelineSquare3 = timelineSquare3.offset().left + 14.142;
-  let YtimelineSquare3 = timelineSquare3.offset().top - 7;
+  let YtimelineSquare3 = timelineSquare3.offset().top - 3;
 
   let YtimelineSquare3_1 = timelineSquare3.offset().top + 32;
 
   let XtimelineSquare4 = timelineSquare4.offset().left + 14.142;
-  let YtimelineSquare4 = timelineSquare4.offset().top + -7;
+  let YtimelineSquare4 = timelineSquare4.offset().top + -3;
   let YtimelineSquare4_1 = timelineSquare4.offset().top + 32;
 
   let XtimelineSquare5 = timelineSquare5.offset().left + 14.142;
-  let YtimelineSquare5 = timelineSquare5.offset().top + -7;
+  let YtimelineSquare5 = timelineSquare5.offset().top + -3;
   let YtimelineSquare5_1 = timelineSquare5.offset().top + 32;
 
   let YtimelineSquare6 = timelineSquare6.offset().top;

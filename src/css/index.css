@@ -12,7 +12,7 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: url("./src/assets/background-header.jpg");
+  background-image: url("../../src/assets/background-header.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

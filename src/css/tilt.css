@@ -32,7 +32,7 @@
 }
 
 .tilt-box {
-  background-image: url("./src/assets/Webapp.png");
+  background-image: url("../../src/assets/Webapp.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;

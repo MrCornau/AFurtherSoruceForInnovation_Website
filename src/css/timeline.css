@@ -554,7 +554,26 @@
   position: absolute;
   width: calc(var(--widthWebapp) * 0.528);
   left: calc(var(--widthWebapp) * 0.297);
+
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.webapp-commment-normalstate {
   top: calc(var(--widthWebapp) * 0.05);
+}
+
+.webapp-comment-change-down {
+  top: calc(var(--widthWebapp) * 0.05 - 20px) !important;
+  opacity: 0 !important;
+}
+
+.webapp-comment-change-up {
+  top: calc(var(--widthWebapp) * 0.05 + 20px) !important;
+  opacity: 0 !important;
 }
 
 #webapp-comment-container {

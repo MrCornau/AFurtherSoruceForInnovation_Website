@@ -21,6 +21,8 @@ let togglePrint = document.getElementById("togglePrint");
 let Steps = [step1, step2, step3, step4, step5];
 let Squares = [stepsquare1, stepsquare2, stepsquare3, stepsquare4, stepsquare5];
 
+let comments = [];
+
 let SelectedPath = arrow1;
 
 let selectStep = (t) => {
@@ -47,6 +49,46 @@ let selectStep = (t) => {
   }
 };
 
+let selectStep2 = (t) => {
+  console.log("test", t);
+  for (let i = 0; i < Steps.length; i++) {
+    if (i == t) {
+      if (Steps[i].classList.contains("timeline-nav-notselected")) {
+        Steps[i].classList.remove("timeline-nav-notselected");
+        Steps[i].classList.add("timeline-nav-selected");
+      }
+    } else {
+      if (Steps[i].classList.contains("timeline-nav-selected")) {
+        Steps[i].classList.remove("timeline-nav-selected");
+        Steps[i].classList.add("timeline-nav-notselected");
+      }
+    }
+  }
+};
+
+let SelectScrolled = () => {
+  let y = window.scrollY;
+  console.log(y);
+  for (let i = 0; i < Squares.length - 1; i++) {
+    if (
+      Squares[i].getBoundingClientRect().top + window.pageYOffset - 200 < y &&
+      y < Squares[i + 1].getBoundingClientRect().top + window.pageYOffset - 200
+    ) {
+      selectStep2(i);
+    } else if (
+      Squares[0].getBoundingClientRect().top - 200 + window.pageYOffset >
+      y
+    ) {
+      selectStep2(0);
+    } else if (
+      Squares[4].getBoundingClientRect().top + window.pageYOffset - 200 <
+      y
+    ) {
+      selectStep2(4);
+    }
+  }
+};
+
 Steps.forEach(function (elem, i) {
   elem.addEventListener("click", function () {
     selectStep(i);
@@ -66,6 +108,7 @@ window.onscroll = function () {
     addsticky(true);
   }
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  SelectScrolled();
 };
 
 // Get the header
@@ -163,3 +206,45 @@ let changeDAGraph = () => {
   }
 };
 changeDAGraph();
+
+let buttonDown = document.getElementById("Webapp-button-down");
+let buttonUp = document.getElementById("Webapp-button-up");
+
+let commentsection = document.getElementById("webapp-comment");
+
+let commentnumber = 1;
+
+let checkcomment = (number) => {
+  commentsection.setAttribute("data", `src/assets/Webapp/Post0${number}.svg`);
+};
+
+checkcomment(commentnumber);
+
+buttonDown.addEventListener("click", function () {
+  console.log("Down");
+  commentsection.classList.add("webapp-comment-change-down");
+  setTimeout(() => {
+    countComment(-1);
+    commentsection.classList.remove("webapp-comment-change-down");
+  }, 300);
+});
+
+buttonUp.addEventListener("click", function () {
+  console.log("Up");
+  commentsection.classList.add("webapp-comment-change-up");
+  setTimeout(() => {
+    countComment(1);
+    commentsection.classList.remove("webapp-comment-change-up");
+  }, 300);
+});
+
+let countComment = (count) => {
+  commentnumber += count;
+  if (commentnumber < 1) {
+    commentnumber = 5;
+  }
+  if (commentnumber > 5) {
+    commentnumber = 1;
+  }
+  checkcomment(commentnumber);
+};

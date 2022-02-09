@@ -24,6 +24,7 @@ let Squares = [stepsquare1, stepsquare2, stepsquare3, stepsquare4, stepsquare5];
 let comments = [];
 
 let SelectedPath = arrow1;
+let timeoutscroll = false;
 
 let selectStep = (t) => {
   console.log("test", t);
@@ -39,6 +40,11 @@ let selectStep = (t) => {
           top: scrollposition,
           behavior: "smooth",
         });
+
+        timeoutscroll = true;
+        setTimeout(() => {
+          timeoutscroll = false;
+        }, 800);
       }
     } else {
       if (Steps[i].classList.contains("timeline-nav-selected")) {
@@ -69,22 +75,25 @@ let selectStep2 = (t) => {
 let SelectScrolled = () => {
   let y = window.scrollY;
   console.log(y);
-  for (let i = 0; i < Squares.length - 1; i++) {
-    if (
-      Squares[i].getBoundingClientRect().top + window.pageYOffset - 200 < y &&
-      y < Squares[i + 1].getBoundingClientRect().top + window.pageYOffset - 200
-    ) {
-      selectStep2(i);
-    } else if (
-      Squares[0].getBoundingClientRect().top - 200 + window.pageYOffset >
-      y
-    ) {
-      selectStep2(0);
-    } else if (
-      Squares[4].getBoundingClientRect().top + window.pageYOffset - 200 <
-      y
-    ) {
-      selectStep2(4);
+  if (!timeoutscroll) {
+    for (let i = 0; i < Squares.length - 1; i++) {
+      if (
+        Squares[i].getBoundingClientRect().top + window.pageYOffset - 300 < y &&
+        y <
+          Squares[i + 1].getBoundingClientRect().top + window.pageYOffset - 300
+      ) {
+        selectStep2(i);
+      } else if (
+        Squares[0].getBoundingClientRect().top - 300 + window.pageYOffset >
+        y
+      ) {
+        selectStep2(0);
+      } else if (
+        Squares[4].getBoundingClientRect().top + window.pageYOffset - 300 <
+        y
+      ) {
+        selectStep2(4);
+      }
     }
   }
 };

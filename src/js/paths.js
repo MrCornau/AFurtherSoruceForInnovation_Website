@@ -357,3 +357,8 @@ const resizeObserver = new ResizeObserver((entries) => {
 
 // start observing a DOM node
 resizeObserver.observe(document.body);
+
+window.onresize = function (event) {
+  console.log("addEventListener - resize");
+  redraw();
+};

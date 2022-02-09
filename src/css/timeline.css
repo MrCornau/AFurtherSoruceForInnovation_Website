@@ -74,11 +74,10 @@
   text-align: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .horizontalscroll {
     overflow-y: hidden;
     white-space: nowrap;
-    width: 100vw;
   }
   ::-webkit-scrollbar {
     height: 4px;

@@ -5,36 +5,148 @@
         <link rel="shortcut icon" href="./favicon.png" />
         <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Simple Boilerplate</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
-        <link rel="stylesheet" type="text/css" href="src/css/particlePost.css">
-        <link rel="stylesheet" type="text/css" href="src/css/fonts.css">
-        <link rel="stylesheet" type="text/css" href="src/css/nav.css">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <title>A Further Source for Innovation</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/index.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/particlePost.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/nav.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/button.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/layout-basics.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/timeline.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/tilt.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/imprint.css">
+        <link rel="stylesheet" href="https://use.typekit.net/qww3msj.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/about.css">
+
+
 
         <!-- Add additional CSS & JS files as necessary here -->
     </head>
-    <body>
-        <div class="nav-container">
+    <nav id="nav-desktop" class="background__Dark">
+        <div class="nav-wrapper">
+        <h5>A Further Source<br>for Innovation</h5>
+        <div class="nav-container-desktop">
             <ul>
-                <li ><span><a href="index.html" class="fontColor_Main">The Process</a></span></li>
-                <li class="li-selected"><span><a class="fontColor_Main">About The Project</a></span></li>
-                <!-- <li><span>Contact</span></li> -->
+                <li ><span><a class="fontColor_Main" href="index.html" >The Process</a></span></li>
+                <li class="li-selected"><span><a class="fontColor_Main" href="about.html">About The Project</a></span></li>
+                <button class="actionbutton button-font fontColor_Dark" >Get Started</button>
               </ul>
+              
+        </div>
+    </div>
+    </nav>
+    <nav id="nav-mobile" class="background__Dark">
+        <div class="nav-wrapper">
+        <h5>A Further Source<br>for Innovation</h5>
+            <button id="nav-toggleHamburger">
+                <svg id="hamburger" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="hamburger-top" d="M0 1H20" stroke="#DBE5E6" stroke-width="2"/>
+                    <path id="hamburger-center" d="M0 9H20" stroke="#DBE5E6" stroke-width="2"/>
+                    <path id="hamburger-bottom" d="M0 17H20" stroke="#DBE5E6" stroke-width="2"/>
+                    </svg>    
+            </button>  
+        </div>
+    </nav>
+
+    <div id="nav-mobile-overlay"class="nav-container-mobile border-bottom nav-background" >
+        <ul>
+            <div class="nav-mobile-overlay-container">
+                
+                <li ><span><a class="fontColor_Main" href="index.html">The Process</a></span></li>
+                <li class="li-selected"><span><a class="fontColor_Main" href="about.html">About The Project</a></span></li>
+            </div>
+            <button class="actionbutton button-font fontColor_Dark" style="margin-top: 40%;">Get Started</button>
+          </ul>
+          
+    </div>
+    <div id="header">
+ 
+    <div class="header-description column">
+
+        <div class="header-brekpoints">
+
+        <p  style="margin: 10px" >Masterthesis <span class="link-inline" href="https://sg.hfg-gmuend.de/" target="_blank">@HfG-Gmuend</span></p>
+  <h1 style=" margin: 10px; line-height: 8rem;" ><span style=" font-size:3.5rem;font-weight: 400;line-height: 4rem;">About the</span></br><span class="fontColor_Signal" style="font-style: italic;
+            font-weight: 700;">Thesis</span></h1>
+        <p  style=" margin: 10px" >Utilizing the Digital Lead User Analysis
+        </br></br>
+            Originially by <span href="https://evhippel.files.wordpress.com/2019/01/ai-method-for-discovering-need-solution-pairs-2019.pdf" class="link-inline" target="_blank">Eric von Hippel & Sandro Kaulartz</span>. Set in context by <span class="link-inline" href="https://www.marius-schnabel.de/" target="_blank">Marius Schnabel</span> and <span class="link-inline" href="https://www.joshcornau.de" target="_blank">Josh Cornau</span></p>
+    </div>
+    
+</div>
+<div class="mirror backgroundvideo">
+    <div class="headerbackground">
+
+    </div>
+    <video class="hideOnMobile" autoplay loop  muted id="headervideo">
+     
+          <!-- <source src="src/assets/Backgroundvideo.mp4" type="video/mp4"> -->
+          <source src="./src/assets/AboutPage_Infinit.webm" type="video/webm">
+      </video>
+  </div>
+</div>
+
+<div class="column" id="about">
+
+    <h1>Research Insights</h1>
+   <div class="about-part1">
+   <h2>What approach do companies use to come up with<span class="fontColor_Signal" style="font-style: italic;
+        font-weight: 700;"> new topics </span> and what are the issues involved?</h2>
+        <p>
+            It was possible to work out with practitioners from innovation areas that companies usually use a stage gate process to run innovation projects in the company. 
+<br><br>
+For innovations that are not classified in the incremental spectrum, they usually use adapted variants of innovation processes. These innovation processes are very often preceded by trend monitoring. Trend monitoring is intended to make the corporate strategy resilient to change, to protect current corporate offerings from disruption and to uncover new market potential. The results of trend monitoring are incorporated into innovation workshops as incentives for future innovation projects. 
+<br><br>
+Here it could be worked out that customer needs can be integrated only very heavily into such a process, since by a classical user search usually no customer needs relevant for the future can be discovered. The second part of the thesis therefore explored the question of how customer needs can be integrated into a trend-based innovation process.
+
+        </p>
+        </div>
+       
+<div class="flex-center">
+    <div class="horizontalscroll"" id="about_graph"><object class=""" id="Data-Anaytic-Graphic"  style="display: unset !important;" type="image/svg+xml"  data="./src/assets/About_Graph.svg"></object></div>
+    <div class="about-part2" >
+        <h2>How can customer needs be integrated into a <span class="fontColor_Signal" style="font-style: italic;
+            font-weight: 700;"> trend-based innovation </span>process?</h2>
+            <p>Particularly in forward-looking projects, it is difficult to integrate customer needs into the innovation process. In classic user research, one encounters the problem that customers are usually unable to detach themselves from the manufacturer's current offerings. (cf. Lüthje, 2007, p.48) This phenomenon is also described as <span class="fontColor_Signal" style="font-style: italic;
+                font-weight: 700;">"functional fixedness". </span>
+                <br><br>
+    
+                The lead user method developed by Eric von Hippel was considered to be one solution to this problem. Lead users are visionary and innovative customers who, at an early stage, exhibit a problem structure or perception typical of a larger customer base. (cf. Granig, 2015, p.96, quoted from Schneider 2002, p. 137)
+                <br><br>
+                
+                Building on the lead user method, it was found in interviews that the use of this method was known to only a few. This can be attributed to the high time investment (4 months, 4 people, 20 hours per week) of the method. (Cf. Kaulartz & Hippel, 2019, p.2) The digital application presented by Kaulartz &Hippel 2019 was then used as a basis for solving the problem. Based on the application of the method, it was found that by analyzing user-generated content it is possible on the one hand to uncover relevant customer needs and on the other hand to understand how a trend is adapted by a user group.
+                We see the digital lead user method as a possible solution to the posed question. 
+                
+                </p>
     </div>
 
+</div>
 
-         
-    <!-- <script src="https://data.jsdelivr.com/v1/package/npm/tsparticles/badge)](https://www.jsdelivr.com/package/npm/tsparticles)"></script> -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.39.0/tsparticles.min.js"></script>
-        <!-- ================================ -->
-        <!-- Add more JavaScript files here!! -->
-        <!-- ================================ -->
-        <script src="src/js/anime.min.js"></script>
-        <script type="text/javascript" src="src/js/other.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
-        <script type="text/javascript" src="src/js/anime.js"></script>
-        <script type="text/javascript" src="src/js/nav.js"></script>
+<div class="about-result">
+
+
+        <img id="aboutresultimage" loading="lazy" src="./src/assets/About_Result.jpg" alt="Result">
+     <div class="about-part3">
+         <h2>Result</h2>
+         <p> In tests with practicing persons from the innovation sector, it was found that the method does uncover customer needs, but that these are usually already known to companies in their own market. The application to understand a trend, to explore a new market and to recognize disruption could however be confirmed in the context of the thesis. A trend-based innovation process cannot be replaced by this method, but the method can be seen as a further source to come to innovation topics. In the present work the Lead user method was arranged into an innovation process. Starting from a trend observation, it is supposed to discover relevant topics. These topics can then be processed and used in innovation workshops to create customer proximity.</p>
+        
+     </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script type="text/javascript" src="./src/js/anime.min.js"></script>
+<script type="text/javascript" src="./src/js/nav.js"></script>
+<script type="text/javascript" src="./src/js/hamburger.js"></script>
+
+
     </body>
 </html>

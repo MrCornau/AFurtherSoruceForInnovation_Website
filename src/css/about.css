@@ -1,0 +1,86 @@
+.headerbackground {
+  position: absolute;
+  height: 100vh;
+  width: 40%;
+  background-color: red;
+  right: 0px;
+  background: linear-gradient(270deg, #000000 -3.07%, rgba(0, 0, 0, 0) 101.23%);
+}
+
+#about p {
+  padding-bottom: 30px;
+}
+
+#about h2 {
+  padding-top: 30px;
+}
+
+#aboutresultimage {
+  max-width: 100%;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .about-part1 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .about-part2 {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+  }
+  .about-part3 {
+    display: flex;
+    flex-direction: column;
+
+    width: 60%;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1400px) {
+  .about-part1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .about-part2 {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+  }
+  .about-part3 {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #about_graph {
+    margin-block: 30px;
+  }
+
+  .about-result {
+    display: flex;
+  }
+
+  #aboutresultimage {
+    width: 50%;
+    margin-right: 30px;
+  }
+}

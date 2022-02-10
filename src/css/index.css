@@ -32,6 +32,10 @@ input[type="reset"] {
   outline: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {

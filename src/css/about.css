@@ -138,7 +138,21 @@
 }
 
 .deliverables-container-header {
-  margin-block: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.deliverables-content-left {
+  height: 200px;
+}
+
+.Text-about {
+  display: flex;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 1400px) {
@@ -165,10 +179,73 @@
   .deliverables-content-list {
     border-top: 0px solid #232425;
   }
+
+  .Text-about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-us {
+    width: 79%;
+  }
+
+  .Text-about div {
+    width: 48%;
+  }
+}
+
+#hfg-batchlight {
+  min-width: 200px;
 }
 
 #deliverables-imagecontainer_1 {
-  background-image: url("../../src/assets/About_Result.jpg");
+  background-image: url("../../src/assets/About_Workshop.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#deliverables-imagecontainer_2 {
+  background-image: url("../../src/assets/Githubrepo.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#deliverables-imagecontainer_3 {
+  background-image: url("../../src/assets/FigmaPluging.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#deliverables-imagecontainer_4 {
+  background-image: url("../../src/assets/About_Webapp.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#about-image {
+  background-image: url("../../src/assets/Marius_Josh.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,4 +281,8 @@
   text-align: left;
   list-style-position: inside;
   padding-left: 0;
+}
+
+.Text-about div {
+  margin-top: 20px;
 }

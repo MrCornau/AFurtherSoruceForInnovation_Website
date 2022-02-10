@@ -29,7 +29,7 @@
             <ul>
                 <li ><span><a class="fontColor_Main" href="index.html" >The Process</a></span></li>
                 <li class="li-selected"><span><a class="fontColor_Main" href="about.html">About The Project</a></span></li>
-                <button class="actionbutton button-font fontColor_Dark" >Get Started</button>
+                <button class="actionbutton button-font fontColor_Dark" onclick="window.location.href='about.html#getstarted';">Get Started</button>
               </ul>
               
         </div>
@@ -55,7 +55,7 @@
                 <li ><span><a class="fontColor_Main" href="index.html">The Process</a></span></li>
                 <li class="li-selected"><span><a class="fontColor_Main" href="about.html">About The Project</a></span></li>
             </div>
-            <button class="actionbutton button-font fontColor_Dark" style="margin-top: 40%;">Get Started</button>
+            <button class="actionbutton button-font fontColor_Dark" style="margin-top: 40%;" onclick="window.location.href='about.html#getstarted';">Get Started</button>
           </ul>
           
     </div>
@@ -138,10 +138,10 @@ Here it could be worked out that customer needs can be integrated only very heav
 </div>
 
 <div class="distance"></div>
-<div class="deliverables">
+<div class="deliverables" id="getstarted">
     <div style="color: #232425;" class="column">
         <div class="deliverables-container-header">
-            <h1 >Deliverables</h1>
+            <h1 >Get Started</h1>
             <p>We see digital lead user analysis as a further source of innovation. In addition to market analyses, technology scouting, and innovation workshops, the digital lead user analysis can be used to find customer-oriented topics for trendbased projects.</p>
         </div>
         <div class="deliverables-container">
@@ -149,8 +149,8 @@ Here it could be worked out that customer needs can be integrated only very heav
                 <div class="deliverables-imagecontainer" id="deliverables-imagecontainer_1"></div>
                 <div class="deliverables-content">
                     <div class="deliverables-content-left">
-                        <h2 style="color: #232425;" class="deliverables-content-item deliverables-content-top"> Workshopsheets</h2>
-                        <p class="deliverables-content-item">  In tests with practicing persons from the innovation sector, it was found that the method does uncover customer needs, but that these are usually already known to companies in their own market.</p>
+                        <h2 style="color: #232425;" class="deliverables-content-item deliverables-content-top">Workshopsheets</h2>
+                        <p class="deliverables-content-item">Enclosed we offer 13 worksheets that completely accompany one within the flow. These can be used either digitally in Figma, or printed out analog.</p>
                     </div>
                     <div class="deliverables-content-right">
                         <div class="deliverables-content-item deliverables-content-top deliverables-content-list "> 
@@ -173,23 +173,26 @@ Here it could be worked out that customer needs can be integrated only very heav
     
             </div>
             <div  class="deliverables-container-item">
-                <div class="deliverables-imagecontainer" id="deliverables-imagecontainer_1"></div>
+                <div class="deliverables-imagecontainer" id="deliverables-imagecontainer_2"></div>
                 <div class="deliverables-content">
                     <div class="deliverables-content-left">
-                        <h2 style="color: #232425;" class="deliverables-content-item deliverables-content-top"> Workshopsheets</h2>
-                        <p class="deliverables-content-item">  In tests with practicing persons from the innovation sector, it was found that the method does uncover customer needs, but that these are usually already known to companies in their own market.</p>
+                        <h2 style="color: #232425;" class="deliverables-content-item deliverables-content-top">Codebase</h2>
+                        <p class="deliverables-content-item">We offer a Github repository where the code base for the digital lead user analysis with Natural Language Processing is stored, as well as the code for the tools and a guide for scrapping.</p>
                     </div>
                     <div class="deliverables-content-right">
                         <div class="deliverables-content-item deliverables-content-top deliverables-content-list "> 
                              <h3>Content</h3>
                             <ul class="caption">
-                                <li>12 Workshopsheets</li>
+                                <li>Scraping</li>
+                                <li>Word2Vec</li>
+                                <li>Semantic Search</li>
+                                <li>Rule based Matching</li>
                             </ul>
                         </div>
                         <div class="deliverables-content-button">
-                            <a class="button-icon" href="https://www.figma.com/community/file/1068572845553499343" target="_blank">
-                                <object "type="image/svg+xml" data="./src/assets/Icons/Download_light.svg" style="padding-right: 10px;"></object>
-                                <span class="button-font">Get the Worksheets</span>
+                            <a class="button-icon" href="https://github.com/MrCornau/HowToFindLeadUsersOnline-Fast" target="_blank">
+                                <object "type="image/svg+xml" data="./src/assets/Icons/githublight.svg" style="padding-right: 10px;"></object>
+                                <span class="button-font">Git Repository</span>
                             </a> 
                         </div>
                        <div>
@@ -200,10 +203,142 @@ Here it could be worked out that customer needs can be integrated only very heav
     
             </div>
         </div>
-
+        <div class="deliverables-container">
+            <div  class="deliverables-container-item">
+                <div class="deliverables-imagecontainer" id="deliverables-imagecontainer_3"></div>
+                <div class="deliverables-content">
+                    <div class="deliverables-content-left">
+                        <h2 style="color: #232425;" class="deliverables-content-item deliverables-content-top">Figma Plugin</h2>
+                        <p class="deliverables-content-item">We provide a Figma plugin that can be used to convert the posts that are found to use the posts for workshops or similar.</p>
+                    </div>
+                    <div class="deliverables-content-right">
+                        <div class="deliverables-content-item deliverables-content-top deliverables-content-list "> 
+                             <h3>Content</h3>
+                            <ul class="caption">
+                                <li>Figma Plugin</li>
+                            </ul>
+                        </div>
+                        <div class="deliverables-content-button">
+                            <a class="button-icon" href="https://github.com/MrCornau/HowToFindLeadUsersOnline-Fast#6-integration-into-figma" target="_blank">
+                                <object "type="image/svg+xml" data="./src/assets/Icons/Download_light.svg" style="padding-right: 10px;"></object>
+                                <span class="button-font">Get the Plugin</span>
+                            </a> 
+                        </div>
+                       <div>
+    
+                       </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div  class="deliverables-container-item">
+                <div class="deliverables-imagecontainer" id="deliverables-imagecontainer_4"></div>
+                <div class="deliverables-content">
+                    <div class="deliverables-content-left">
+                        <h2 style="color: #232425;" class="deliverables-content-item deliverables-content-top">Web App</h2>
+                        <p class="deliverables-content-item">For manual selection of filtered posts, we developed a web tool that allows importing the analyzed comments and quickly finding posts from lead users by highlighting the keyword.</p>
+                    </div>
+                    <div class="deliverables-content-right">
+                        <div class="deliverables-content-item deliverables-content-top deliverables-content-list "> 
+                             <h3>Content</h3>
+                            <ul class="caption">
+                                <li>Web-App</li>
+                                <li>Figma Prototype</li>
+                            </ul>
+                        </div>
+                        <div class="deliverables-content-button">
+                            <a class="button-icon" href="https://github.com/MrCornau/HowToFindLeadUsersOnline-Fast#5-manual-analysis" target="_blank">
+                                <object "type="image/svg+xml" data="./src/assets/Icons/githublight.svg" style="padding-right: 10px;"></object>
+                                <span class="button-font">Git Repository</span>
+                            </a> 
+                        </div>
+                       <div>
+    
+                       </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
     </div>
+    <div class="distance"></div>
 </div>
 
+<div class="column">
+    <div class="deliverables-container-header" style="margin-bottom: 60px">
+        <h1 >The Project</h1>
+        <p>This project is a Master thesis written @hfg schwäbisch Gmünd.</p>
+    </div>
+    <div class="about-content">
+    <div id="hfg-batchlight">
+
+            <object class="svg-timeline" type="image/svg+xml"  data="./src/assets/Hfg_Batch_Light.svg"></object>
+
+    </div>
+    <div class="about-us">
+        <div class="deliverables-imagecontainer" id="about-image"></div>
+    
+    <div class="Text-about">
+        <div><h3>Marius Schnabel</h3>
+        <p>Studied interaction design at the Schwäbisch Gmünd University of Applied Sciences and received his bachelor's degree in March 2020. In his bachelor thesis he dealt with sea rescue in the Arctic. Together with his colleague Sebastian Schmid, he developed a concept that is intended to function transnationally for sea rescue. Important hurdles for communication and the organization of resources should be removed. The goal of the work was to support the cooperation of the countries and to better prepare them for the consequences of climate change.</p></div>
+        <div><h3>Josh Cornau</h3><p>Studied Internet of Things - Design of Networked Systems at the Schwäbisch Gmünd University of Applied Sciences. He graduated with a bachelor's degree in February 2020. In his bachelor thesis he dealt with the mediation of e-mobility. Together with fellow student Felix Hirner, he developed a concept that allows people to test whether an e-vehicle suits their individual driving habits. Factors such as charging options, their utilization and the required range were taken into account.</p></div>
+    </div>
+    </div>
+</div>
+</div>
+
+<div>
+    <footer class="imprint">
+        <div class="column imprint-container">
+            <div class="imprint-left">
+                <div class="imprintcontact-container">
+                    <div class="particle-triangle-imprint">
+                    </div>
+                    <div class="imprint-contact">
+                        <h2 style="margin-block-end: 0;">Let’s get in contact!</h2>
+                    </div>
+                </div>
+                <div class="studentcontainer">
+                <div class="imprint-student">
+                    <div class="student-image" id="marius"></div>
+                    <div class="imprint-student-content">
+                        <h4>Marius Schnabel</h4>
+                        <div class="imprint-icons">
+                           <a href="https://twitter.com/MariusSchnabel" target="_blank"><object type="image/svg+xml"  data="./src/assets/twitter.svg" ></object></a>
+                           <a href="https://www.linkedin.com/in/marius-schnabel-614425180/" target="_blank"><object type="image/svg+xml"  data="./src/assets/Linkedin.svg"></object></a>
+                            <a href="mailto:marius.schnabel@hfg.design" target="_blank"><object type="image/svg+xml"  data="./src/assets/mail.svg"></object></a>
+                        </div>
+                        <h5>marius.schnabel@hfg.design</h5>
+                    </div>
+                </div>
+          
+            <div class="imprint-student">
+                <div class="student-image" id="josh"></div>
+                <div class="imprint-student-content">
+                    <h4>Josh Cornau</h4>
+                    <div class="imprint-icons">
+                       <a href="https://twitter.com/JoshCornau" target="_blank"><object type="image/svg+xml"  data="./src/assets/twitter.svg" ></object></a>
+                       <a href="https://www.linkedin.com/in/josh-%F0%9F%91%BE-cornau-020a33163/" target="_blank"><object type="image/svg+xml"  data="./src/assets/Linkedin.svg"></object></a>
+                        <a href="mailto:hi@joshcornau.de" target="_blank"><object type="image/svg+xml"  data="./src/assets/mail.svg"></object></a>
+                    </div>
+                    <h5>hi@joshcornau.de</h5>
+                </div>
+            </div>
+        </div>
+        </div>
+     
+            <div class="imprint-right">
+                <object class="svg-timeline" type="image/svg+xml"  data="./src/assets/HfgBatch.svg"></object>
+            </div>
+        </div>
+        <div class="column imprint-link">
+            <a><p>Imprint</p></a>
+            <h5>Marius Schnabel & Josh Cornau © 2022</h5>
+        </div>
+    
+    </div>
+    </footer>
+    </div>
 
 
 

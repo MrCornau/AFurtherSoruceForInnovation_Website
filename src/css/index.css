@@ -314,7 +314,7 @@ body {
   opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 1200px) {
   .davinci-container {
     flex-direction: column;
     align-items: flex-start;
@@ -332,14 +332,6 @@ body {
     opacity: 0;
     transform-origin: left top;
     left: 20px;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1200px),
-  only screen and (min-device-pixel-ratio: 1.5) and (max-width: 600px) {
-  .davinci-container {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
 

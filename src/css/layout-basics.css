@@ -9,6 +9,9 @@
   .davinci-font {
     left: -30px;
   }
+  .Implementation-image {
+    margin-top: 130px;
+  }
 }
 
 .column {
@@ -58,12 +61,12 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
   .particle-svg {
-    width: 60%;
+    width: 100%;
   }
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .margin-left {
     margin-left: 40px;
   }
@@ -94,6 +97,9 @@
   }
   .requirements-svg {
     width: 50%;
+  }
+  #davinci-svg {
+    width: 80%;
   }
 }
 

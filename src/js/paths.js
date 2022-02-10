@@ -40,7 +40,7 @@ let draw = () => {
   let YtimelineSquare6 = timelineSquare6.offset().top;
   let SagegateRect = stagegate.getBoundingClientRect();
 
-  let StagegateY = stagegateQ.offset().top + SagegateRect.height / 2;
+  let StagegateY = stagegateQ.offset().top + SagegateRect.height / 2 + 1;
   let StagegateX = stagegateQ.offset().left;
 
   var d = `${"M" + XtimelineSquare3 + "," + YtimelineSquare3_1} 
@@ -221,8 +221,8 @@ let redraw = () => {
   let YtimelineSquare6 = timelineSquare6.offset().top;
   let SagegateRect = stagegate.getBoundingClientRect();
 
-  let StagegateY = stagegateQ.offset().top + SagegateRect.height / 2;
-  let StagegateX = stagegateQ.offset().left;
+  let StagegateY = stagegateQ.offset().top + SagegateRect.height / 2 + 1;
+  let StagegateX = stagegateQ.offset().left + 1;
 
   var d = `${"M" + XtimelineSquare3 + "," + YtimelineSquare3_1} 
   ${"L" + XtimelineSquare3 + "," + (YtimelineSquare4 - 100)} 

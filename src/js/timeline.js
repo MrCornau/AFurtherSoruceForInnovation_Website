@@ -157,7 +157,7 @@ function addsticky(upscroll) {
     } else {
       header.style.cssText += `top : 0px`;
       mobilenav.style.cssText += `top : -${timelineheight}px`;
-      nav.style.cssText += `top : -${timelineheight / 2}px`;
+      nav.style.cssText += `top : -${timelineheight / 2 + 20}px`;
     }
   } else {
     header.classList.remove("sticky");

@@ -8,8 +8,8 @@
   position: absolute;
   top: 0;
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   z-index: -1;
   background-image: url("../../src/assets/background-header.jpg");
   background-position: 50% 50%;
@@ -173,8 +173,14 @@ body {
   -o-background-size: cover; */
 }
 
-#headervideo {
+.headercontainer {
+  overflow: hidden;
+  width: 100vw;
   height: 100vh;
+}
+
+#headervideo {
+  min-height: 100vh;
   min-width: 100vw;
 }
 

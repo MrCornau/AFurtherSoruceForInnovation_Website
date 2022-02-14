@@ -1,12 +1,16 @@
-// if (window.dataLayer) {
+sessionStorage.setItem("lastname", "Smith");
 
-let consent = false;
-
-if (!consent) {
-  window.onload = function () {
+window.onload = function () {
+  if (!sessionStorage.consent) {
+    sessionStorage.consent = 10;
+  } else {
+    sessionStorage.consent = 20;
+  }
+  console.log(sessionStorage.consent);
+  if (sessionStorage.consent == 10) {
     document.getElementById("consent-container").classList.remove("notLoaded");
-  };
-}
+  }
+};
 
 console.log(window.dataLayer.find((element) => element["gtm.start"]));
 console.log("test");
@@ -21,10 +25,15 @@ function consentGranted() {
     ad_storage: "granted",
   });
   console.log(window.dataLayer.find((element) => element["consent"]));
-  consent = true;
+  sessionStorage.consent = 20;
 }
+
 function consentNotGranted() {
   document.getElementById("consent-container").classList.add("notLoaded");
   console.log(window.dataLayer.find((element) => element["consent"]));
-  consent = true;
+  sessionStorage.consent = 20;
 }
+
+let first = () => {
+  consent = false;
+};

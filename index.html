@@ -15,11 +15,23 @@
         <link rel="stylesheet" type="text/css" href="./src/css/timeline.css">
         <link rel="stylesheet" type="text/css" href="./src/css/tilt.css">
         <link rel="stylesheet" type="text/css" href="./src/css/imprint.css">
+        <link rel="stylesheet" type="text/css" href="./src/css/consent.css">
         <link rel="stylesheet" href="https://use.typekit.net/qww3msj.css">
+
         
 
         <!-- Add additional CSS & JS files as necessary here -->
     </head>
+    <script>
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Default ad_storage to 'denied'.
+        gtag('consent', 'default', {
+          'ad_storage': 'denied'
+        });
+        </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-31ZZN922GS"></script>
 <script>
@@ -29,7 +41,34 @@
 
   gtag('config', 'G-31ZZN922GS');
 </script>
+<!-- Update this section based on your business requirements. -->
+<script>
+
+
+  </script>
     <body id="body">
+        <div class="notLoaded" id="consent-container">
+            <div class="consent">
+                <div class="consent-top"> 
+                <div>
+                    <object type="image/svg+xml" data="./src/assets/Cookie.svg" style="padding-right: 10px;"></object>
+                </div>
+                <div style="margin-left:10px">
+                    <h3 style="margin: 0;">Have you tried our cookies?</h3>
+                    <p>Only the best ingredients are used. (Google Analytics & MSG)</p>
+                </div>
+
+                </div>
+               
+                
+                <div class="buttonsection-consent">
+                    <button class="button-discard button-font fontColor_Dark" id="button-discard">Deny</button>
+                    <button class="button-accept button-font fontColor_Dark" id="button-accept">Accept</button>
+                </div>
+            </div>
+            <div class="consent-triangle-imprint"></div>
+       
+        </div>
         <nav id="nav-desktop" class="background__Dark">
             <div class="nav-wrapper">
             <h5 style="cursor: pointer;" onclick="window.location.href='index.html';">A Further Source<br>for Innovation</h5>
@@ -633,7 +672,7 @@
                 <h2>3. Manual Selection</h2>
                 <div class="timeline-tag"><h5>1 Day</h5></div>
                 <p>
-                    When the data is filtered, the number of posts should decrease significantly. The posts can be imported into Figma via an extension to be used for the refinement steps.</p>
+                    When the data is filtered, the amount of posts should be significantly reduced. Nevertheless, it can be several thousands of posts. The Lead Finder tool can help to find the final Lead Users. In the best case, the data to be analysed is divided into a group to reduce the workload of the individual.</p>
                 <button disabled class="button-icon buttonmarging">
                     <object type="image/svg+xml" data="src/assets/Icons/Download.svg" style="padding-right: 10px;"></object>
                     <span class="button-font">Coming Soon ;)</span>
@@ -717,7 +756,7 @@
         <object class="fontColor_Main timelinecontent-left-personcount" type="image/svg+xml" data="./src/assets/Icons/Personcount_2.svg"></object>
         <h2>4. Clustering</h2>
         <div class="timeline-tag"><h5>1 Day</h5></div>
-        <p class="clustering-text">The sorted out posts can imported into the 
+        <p class="clustering-text">The sorted out posts can be imported into the 
             whiteboard tool FigJam to be used for the further work steps. 
             First, the lead user posts are to be brought together in 
             clusters and synthesised according to their basic needs.
@@ -814,6 +853,7 @@
 
 </div>
 </footer>
+
 </div>
  
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -829,7 +869,8 @@
        
         <script type="text/javascript" src="./src/js/timeline.js"></script>
         <script type="text/javascript" src="./src/js/paths.js"></script>
-        
+        <script type="text/javascript" src="./src/js/concent.js"></script>
+
 
          <!-- <script type="text/javascript" src="./src/js/particleanimation.js"></script> -->
 </body>

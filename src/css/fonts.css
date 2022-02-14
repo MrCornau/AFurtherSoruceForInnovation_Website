@@ -10,7 +10,7 @@ html {
   --contour-fine: rgb(51, 55, 58);
   --fontcolor-main: #dbe5e6;
   --fontcolor-second: rgba(176, 205, 207, 1);
-  --fontcolor-signal: #edf67d;
+  --fontcolor-signal: rgb(238, 246, 126);
   --fontcolor-dark: #1c1d1f;
   --fontcolor-third: rgba(64, 78, 81, 1);
 

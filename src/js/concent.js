@@ -27,14 +27,14 @@ function consentGranted() {
     ad_storage: "granted",
     analytics_storage: "granted",
   });
-  console.log(window.dataLayer.find((element) => element["consent"]));
   sessionStorage.consent = 20;
+  console.log("consentGranted");
 }
 
 function consentNotGranted() {
   document.getElementById("consent-container").classList.add("notLoaded");
-  console.log(window.dataLayer.find((element) => element["consent"]));
   sessionStorage.consent = 20;
+  console.log("consentDiscard");
 }
 
 let first = () => {
